@@ -103,20 +103,13 @@ heroes.push(gendalf)
 console.log(heroes)
    
 
-
-// 
-
-
-
-
-
-
-
-
   return (
-    <div>
+    <div className="lesson-container">
       <h2>Lesson 06</h2>
       <p>React type Script</p>
+      <p>самое важное на этом уроке происходит внутри компонента в теле
+        функции и в консоли браузера
+      </p>
     </div>
   );
 }
