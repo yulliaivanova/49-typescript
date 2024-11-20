@@ -7,7 +7,8 @@
 // * c деструктуризацией
 // * мы забираем значения из объекта по ключам и кладем в переменные с соответствующим именем в одну строчку
 
-import "./myButton.css";
+import styles from './myButton.module.css'
+import cn from 'classnames'
 
 // описали интерфейс для пропсов IMyButtonProps
 // поскольку у нас указаны значения по умолчанию мы можем поставить вопрос перед свойством сделав его не обязательным для передачи
@@ -30,11 +31,22 @@ function MyButton({
   myType = "button",
 }: IMyButtonProps) {
   return (
-    <button
-      type={myType}
-      onClick={func}
-      className={`my-button ${isDanger ? "btn-danger" : "btn-primary"}`}
-    >
+    // <button
+    //   type={myType}
+    //   onClick={func}
+    //   className={`my-button ${isDanger ? "btn-danger" : "btn-primary"}`}
+    // >
+    //   {text}
+    // </button>
+    <button type={myType} onClick={func}
+    className={cn(styles.myButton, {
+      // если isDanger будет true
+      // мы добавим styles.btnDanger
+      // если false - класс добавлен не будет
+      [styles.btnDanger]:isDanger,
+      // каждое следующее условие мы указываем через запятую
+      [styles.btnPrimary]:!isDanger
+    })}>
       {text}
     </button>
   );

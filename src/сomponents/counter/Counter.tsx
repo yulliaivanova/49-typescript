@@ -15,6 +15,7 @@ export default function () {
     setCount((prev) => prev + 1);
   };
 
+  console.log('render counter')
   return (
     <div className="counter">
       <MyButton func={handleMinus} text={"-"} />

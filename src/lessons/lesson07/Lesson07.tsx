@@ -4,14 +4,14 @@ import MyButton from "../../сomponents/myButton/MyButton";
 export default function Lesson07() {
   // * функции
 
-  // *тип параметра функции указывается через двоеточие в круглых скобках
+  // * тип параметра функции указывается через двоеточие в круглых скобках
 
-  // *тип возвращаемого значения указывается после круглых скобок
+  // * тип возвращаемого значения указывается после круглых скобок
   // const showMessage =(message:string) : string =>{
   //   console.log(`message: ${message}`)
   //   return `message: ${message}`
 
-  // если у функции нет 
+  // если у функции нет вовращаемого значения-она возвращает тип void
   const showMessage = (message: string): void => {
     console.log(`message: ${message}`);
   };
@@ -28,7 +28,7 @@ const result:number = sum(42, 100)
 const someVar:any ='hello'
 
 // * union type
-  // оператор предполагающий что у данного значения может быть выбор из нескольких типов
+  // оператор предполагающий,что у данного значения может быть выбор из нескольких типов
 
   // эта переменны может быть и строкой и числом, но с ней в дальнейшем будет сложнее работать, потому что TS будет просить больше проверок - число это или строка?
   let stringOrNumber: string | number = 42;
@@ -54,7 +54,7 @@ const someVar:any ='hello'
 
   const dog: Dog = {
     name: 'Johny',
-    sound() {
+    sound(){
       console.log('woof!')
     },
     breed: 'labrador'
