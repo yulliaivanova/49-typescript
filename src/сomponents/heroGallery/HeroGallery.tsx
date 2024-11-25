@@ -1,6 +1,7 @@
 import React from "react";
 import HeroCard from "../heroCard/HeroCard";
 import { heroes, IHero } from "../../lessons/lesson_05/data";
+import "./heroGallery.css"
 
 // типизация пропсов
 interface HeroGalleryProps {
