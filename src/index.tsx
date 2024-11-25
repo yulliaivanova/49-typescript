@@ -39,6 +39,15 @@ root.render(
         <Route path="lesson-1" element={<Lesson01/>} />
         <Route path="lesson-2" element={<Lesson02/>} />
         <Route path="lesson-3" element={<Lesson03 />} />
+        <Route path="lesson-4" element={<Lesson04 />} />
+        <Route path="lesson-5" element={<Lesson05 />} />
+        <Route path="lesson-6" element={<Lesson06 />} />
+        <Route path="lesson-7" element={<Lesson07 />} />
+        <Route path="lesson-8" element={<Lesson08 />} />
+        <Route path="lesson-9" element={<Lesson09 />} />
+        <Route path="lesson-10" element={<Lesson10 />} />
+        <Route path="lesson-11" element={<Lesson11 />} />
+        {/* <Route path="lesson-12" element={<Lesson03 />} /> */}
       </Route>
     </Routes>
     {/* <Lesson06 /> */}
