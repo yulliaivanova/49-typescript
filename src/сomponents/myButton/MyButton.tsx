@@ -20,7 +20,7 @@ interface IMyButtonProps {
 }
 
 const handleDefaultClick = () => {
-  console.log("default click!");
+  // console.log("default click!");
 };
 
 // интерфейс указываем в круглых скобках после деструктуризации props после двоеточия
