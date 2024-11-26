@@ -21,6 +21,13 @@ import Lesson08 from "./lessons/lesson08/Lesson08";
 import Lesson09 from "./lessons/lesson09/Lesson09";
 import Lesson10 from "./lessons/lesson10/Lesson10";
 import Lesson11 from "./lessons/lesson11/Lesson11";
+import Homework01 from "./homeworks/homework01/Homework";
+import Homework02 from "./homeworks/homework02/Homework02";
+import Homework03 from "./homeworks/homework03/Homework03";
+import Homework04 from "./homeworks/homework04/Homework04";
+import Homework06 from "./homeworks/homework06/Homework06";
+import Homework12 from "./homeworks/homework12/Homework12";
+import Lesson13 from "./lessons/lesson13/Lesson13";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -49,6 +56,13 @@ root.render(
         <Route path="lesson-10" element={<Lesson10 />} />
         <Route path="lesson-11" element={<Lesson11 />} />
         <Route path="lesson-12" element={<Lesson12 />} />
+        <Route path="lesson-13" element={<Lesson13 />} />
+        <Route path="home-work-01" element={<Homework01/>} />
+        <Route path="home-work-02" element={<Homework02 />} />
+        <Route path="home-work-03" element={<Homework03 />} />
+        <Route path="home-work-04" element={<Homework04 />} />
+        <Route path="home-work-06" element={<Homework06 />} />
+        <Route path="home-work-12" element={<Homework12 />} />
       </Route>
     </Routes>
 

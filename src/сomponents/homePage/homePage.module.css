@@ -10,6 +10,9 @@
     text-decoration: none;
   }
   
+  .homework {
+    background-color: rgb(237, 156, 240) !important;
+  }
   .gridLessonContainer div {
     display: flex;
     align-items: center;
@@ -19,7 +22,11 @@
     background-color: rgb(59, 36, 234);
     color: white;
   }
+
   
   .gridLessonContainer div:hover {
-    background-color: rgb(196, 188, 255);
+    background-color: rgb(235, 60, 223);
+  }
+  .homework:hover {
+    background-color: rgb(240, 201, 240) !important;
   }
