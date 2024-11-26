@@ -29,6 +29,8 @@ import Homework06 from "./homeworks/homework06/Homework06";
 import Homework12 from "./homeworks/homework12/Homework12";
 import Lesson13 from "./lessons/lesson13/Lesson13";
 import GenderForm from "./сomponents/genderForm/GenderForm";
+import Lesson14 from "./lessons/lesson14/Lesson14";
+import ProductPage from "./сomponents/productPage/ProductPage";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -59,6 +61,9 @@ root.render(
         <Route path="lesson-11" element={<Lesson11 />} />
         <Route path="lesson-12" element={<Lesson12 />} />
         <Route path="lesson-13" element={<Lesson13 />} />
+        <Route path="lesson-14" element={<Lesson14 />} />
+        <Route path="lesson-14/:id" element={<ProductPage/>} />
+
         <Route path="home-work-01" element={<Homework01/>} />
         <Route path="home-work-02" element={<Homework02 />} />
         <Route path="home-work-03" element={<Homework03 />} />
