@@ -28,6 +28,7 @@ import Homework04 from "./homeworks/homework04/Homework04";
 import Homework06 from "./homeworks/homework06/Homework06";
 import Homework12 from "./homeworks/homework12/Homework12";
 import Lesson13 from "./lessons/lesson13/Lesson13";
+import GenderForm from "./сomponents/genderForm/GenderForm";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -44,6 +45,7 @@ root.render(
         <Route path="/" element={<HomePage />} />
         <Route path="fetch-dog" element={<FetchDog />} />
         <Route path="hero-gallery" element={<HeroGallery data={heroes} />} />
+        <Route path="gender-form" element={<GenderForm/>} />
         <Route path="lesson-1" element={<Lesson01 />} />
         <Route path="lesson-2" element={<Lesson02 />} />
         <Route path="lesson-3" element={<Lesson03/>} />
